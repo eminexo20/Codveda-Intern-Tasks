@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.counter-container {
+    background-color: #1e293b;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 320px;
+    border: 1px solid #334155;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #38bdf8;
+}
+
+.counter-display {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+button {
+    flex: 1;
+    padding: 12px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.btn-decrement {
+    background-color: #ef4444;
+    color: white;
+}
+
+.btn-decrement:hover {
+    background-color: #dc2626;
+}
+
+.btn-increment {
+    background-color: #22c55e;
+    color: white;
+}
+
+.btn-increment:hover {
+    background-color: #16a34a;
+}
+
+.btn-reset {
+    width: 100%;
+    background-color: #64748b;
+    color: white;
+}
+
+.btn-reset:hover {
+    background-color: #475569;
+}
