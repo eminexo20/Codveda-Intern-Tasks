@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub User Explorer - Codveda Task</title>
+    <link rel="stylesheet" href="task4.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1><i class="fab fa-github"></i> GitHub User Explorer</h1>
+            <p>Codveda Intermediate Level - REST API Integration Task</p>
+        </header>
+
+        <div class="search-box">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" id="searchInput" placeholder="Enter GitHub username (e.g., octocat)..." autocomplete="off">
+        </div>
+
+        <div id="loading" class="loading hidden">
+            <i class="fas fa-spinner fa-spin"></i> Loading data...
+        </div>
+
+        <div id="error" class="error hidden"></div>
+
+        <div id="resultContainer" class="result-container hidden">
+            <div class="profile-card">
+                <img id="avatar" src="" alt="User Avatar">
+                <div class="profile-info">
+                    <h2 id="name"></h2>
+                    <p id="username" class="username"></p>
+                    <p id="bio" class="bio"></p>
+                    
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span id="repos" class="stat-value">0</span>
+                            <span class="stat-label">Repositories</span>
+                        </div>
+                        <div class="stat-item">
+                            <span id="followers" class="stat-value">0</span>
+                            <span class="stat-label">Followers</span>
+                        </div>
+                        <div class="stat-item">
+                            <span id="following" class="stat-value">0</span>
+                            <span class="stat-label">Following</span>
+                        </div>
+                    </div>
+
+                    <a id="profileLink" href="#" target="_blank" class="btn-profile">View Profile</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="task4.js"></script>
+</body>
+</html>
