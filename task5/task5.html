@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codveda Task - CSS Frameworks</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            DEFAULT: '#10B981',
+                            dark: '#047857',
+                            light: '#D1FAE5',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand selection:text-white">
+
+    <header class="sticky top-0 z-50 bg-white/85 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <div class="bg-brand text-white p-2 rounded-lg font-bold text-xl">&lt;/&gt;</div>
+                <span class="text-xl font-extrabold tracking-tight text-slate-900">Codveda<span class="text-brand">Task</span></span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                <a href="#features" class="hover:text-brand transition-colors">Features</a>
+                <a href="#about" class="hover:text-brand transition-colors">About Us</a>
+                <a href="#contact" class="hover:text-brand transition-colors">Contact</a>
+            </nav>
+            <div>
+                <button id="alertBtn" class="bg-brand hover:bg-brand-dark text-white px-4 py-2 rounded-lg text-sm font-semibold shadow-sm transition-all cursor-pointer">
+                    Get Notification
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative overflow-hidden py-20 lg:py-32 bg-gradient-to-b from-brand-light/40 to-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="inline-block bg-brand-light text-brand-dark text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4">Level 2 • Task 3 Solution</span>
+            <h1 class="text-4xl sm:text-6xl font-extrabold text-slate-900 tracking-tight max-w-3xl mx-auto">
+                Modern & Flexible Interfaces with <span class="text-brand">Tailwind CSS</span>
+            </h1>
+            <p class="mt-6 text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto">
+                A fast, responsive, and modern design language customized completely to match brand guidelines.
+            </p>
+            <div class="mt-10 flex justify-center gap-4">
+                <a href="#features" class="bg-brand hover:bg-brand-dark text-white font-medium px-6 py-3 rounded-xl shadow-lg shadow-brand/20 transition-all">Explore</a>
+                <a href="#about" class="bg-white hover:bg-slate-100 text-slate-700 font-medium px-6 py-3 rounded-xl border border-slate-200 transition-all">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold tracking-tight text-slate-900">Key Features</h2>
+            <p class="mt-4 text-slate-600">Modern standards utilized in building the user interface.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="custom-card bg-white p-8 rounded-2xl border border-slate-100 shadow-xl shadow-slate-100 transition-all">
+                <div class="w-12 h-12 bg-brand-light text-brand rounded-xl flex items-center justify-center font-bold text-xl mb-6">⚡</div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Fast Development</h3>
+                <p class="text-slate-600">Achieve professional designs in minutes thanks to pre-built utility classes.</p>
+            </div>
+            
+            <div class="custom-card bg-white p-8 rounded-2xl border border-slate-100 shadow-xl shadow-slate-100 transition-all">
+                <div class="w-12 h-12 bg-brand-light text-brand rounded-xl flex items-center justify-center font-bold text-xl mb-6">🎨</div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Customization</h3>
+                <p class="text-slate-600">A unique design language tailored precisely to brand color palettes and typography.</p>
+            </div>
+            
+            <div class="custom-card bg-white p-8 rounded-2xl border border-slate-100 shadow-xl shadow-slate-100 transition-all">
+                <div class="w-12 h-12 bg-brand-light text-brand rounded-xl flex items-center justify-center font-bold text-xl mb-6">📱</div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Fully Responsive</h3>
+                <p class="text-slate-600">Flawless appearance and performance across mobile, tablet, and desktop screens.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p class="text-sm">© 2026 Codveda Internship. All rights reserved.</p>
+            <div class="flex space-x-6 text-sm">
+                <a href="https://www.codveda.com" target="_blank" class="hover:text-white transition-colors">Web</a>
+                <a href="mailto:support@codveda.com" class="hover:text-white transition-colors">Support</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="task5.js"></script>
+</body>
+</html>
