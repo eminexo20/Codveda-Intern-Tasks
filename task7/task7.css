@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background: #0f172a;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    opacity: 0;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: #94a3b8;
+    opacity: 0;
+}
+
+.cta-btn {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    background: #3b82f6;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.cards-section {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 5rem 2rem;
+    min-height: 50vh;
+}
+
+.card {
+    background: #1e293b;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    opacity: 0;
+    transform: translateY(50px);
+}
